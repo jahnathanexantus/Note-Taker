@@ -3,7 +3,6 @@
 const path = require("path");
 const apirouter = require("express").Router();
 const { readFromFile, readAndAppend } = require("../helper/fsUtils");
-// const uuid = require("../helper/uuid");
 const { v4: uuidv4 } = require('uuid');
 apirouter.get("/notes", (req, res) => {
 	console.info(`${req.method} request received for note`);
